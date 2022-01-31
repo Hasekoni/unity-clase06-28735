@@ -15,7 +15,12 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if(transform.position.x > -20f)
+        {
+            Debug.Log("NO SE ALCANZO EL LIMITE");
+            Movement(); 
+        }
+      
     }
 
     private void Movement()
