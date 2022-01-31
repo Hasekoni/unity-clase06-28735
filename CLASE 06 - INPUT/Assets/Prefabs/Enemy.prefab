@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c38038edab801c046a8829ff12f07ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direction: {x: -1, y: 0, z: 0}
-  speed: 2
+  direction: {x: 0, y: 0, z: 1}
+  speed: 100
 --- !u!1001 &8684359383969815207
 PrefabInstance:
   m_ObjectHideFlags: 0
