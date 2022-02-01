@@ -7,6 +7,10 @@ public class Move : MonoBehaviour
     // Start is called before the first frame update
     [SerializeField] Vector3 direction = new Vector3(0, 0, 1);
     [SerializeField] float speed = 2f;
+    [SerializeField] float offsetX;
+
+    [SerializeField] bool IsLeft = true;
+
     void Start()
     {
 
@@ -15,12 +19,18 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(transform.position.x > -20f)
+
+
+
+        if (transform.position.x > -offsetX) IsLeft = false;
         {
             Debug.Log("NO SE ALCANZO EL LIMITE");
             Movement(); 
         }
-      
+      else
+        {
+            Debug.Log("SE ALCANZO EL LIMITE");
+                }
     }
 
     private void Movement()
